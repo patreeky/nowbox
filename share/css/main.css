@@ -1,0 +1,577 @@
+
+body { background: url(/images/textures/aji-tiles-crosshatch-white.jpg) repeat; color: #090909; }
+
+/* body#video_layout, *//* removing original background  --patrick */
+body#channel_layout { 
+  background-color: #333; 
+  background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat; color: #090909; 
+}
+
+/* changing video page background  --patrick */
+body#video_layout {
+  background: #333 url(../images/new/video_layout_bg.png);
+}
+
+header { position: relative; padding: 25px 0px 25px; line-height: 30px; text-align: left;  font-size: 14px; z-index: 10;
+	background-color: #DD7924; background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat;
+}
+	.home header{ background-color: transparent; background: none;}
+	header > .wrapper { padding: 0px; }
+	#logo{ display: block; float: left; height: 30px; margin: 0px;}
+		#logo img{ vertical-align: middle;}
+	header .fblike{ float: right; }
+	header ul{ float: right; list-style: none; padding: 0px 10px; margin: 0px auto; background: rgba(0, 0, 0, 0.4); }
+		header ul li { float: right; display: block; padding: 2px 5px;}
+			header ul a, header ul a:active, header ul a:visited{ color: #DDD;  font-weight: normal;}
+				header ul a:hover { color: #00bfff;}
+
+footer {   background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat; position: relative; padding: 20px 0px 20px; margin: auto; font-size: 14px; }
+	footer > .wrapper { padding: 0px;}
+footer ul{ float: right; list-style: none; padding: 0px; margin: 0px auto; }
+	footer ul li { float: right; display: block; padding: 2px 5px;}
+		footer ul a, footer ul a:active, footer ul a:visited{ color: #777; font-weight: normal;}
+		footer ul a:hover { color: #AAA;}
+
+	#mixpanel { float: right; margin: 10px 0px;}
+.follow, .fblike, .tweet, .plusone { float: left; }
+
+#main {  position: relative;padding: 0px 0px; z-index: 1; }
+.wrapper{ width: 900px; padding: 20px 0px; margin: auto; position: relative;}
+	.narrow.wrapper{ width: 600px; }
+.section{  margin: 0px 0px 20px; padding: 20px; background: rgba(255, 255, 255, 0.5); box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);}
+.bare.section{  background: transparent; box-shadow: none; padding: 0px; }
+.section.lite-blue{ background: rgba(0, 153, 204, 0.1); }
+.section.lite-gray{ background: rgba(0, 0, 0, 0.1); }
+
+ul.section { list-style: none; }
+.section li{ margin: 10px;  color: #444;}
+.section p{ margin: 10px 0px; font-size: 15px; line-height: 2;}
+
+.ipad-chrome{ position: relative; height: 469px; width: 600px; background-repeat: no-repeat; background-image: url(http://nowbox.com/images/graphics/ipad-chrome.png); }
+.ipad-chrome img{ position: absolute; top: 59px; left: 66px; width: 469px;}
+.ipad-chrome iframe{ position: absolute; top: 59px; left: 66px; }
+
+
+/* SPLASH */
+#splash{ position: relative; height: 100%; width: 100%;}
+#launch{
+	top: 0px; bottom: 0px; left: 0px; right: 0px;
+	position: fixed;
+	z-index: 9999;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+/*#launch.photo1{
+   background: url(http://nowbox.com/images/photos/89100014.jpg) no-repeat center center ;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://nowbox.com/images/photos/89100014.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://nowbox.com/images/photos/89100014.jpg', sizingMethod='scale')";
+}
+
+#launch.photo2{
+   background: url(http://nowbox.com/images/photos/89100009.jpg) no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://nowbox.com/images/photos/89100009.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://nowbox.com/images/photos/89100009.jpg', sizingMethod='scale')";
+}
+*/
+#launch.photo3{
+	 background: url(http://nowbox.com/images/photos/89100017.jpg) no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://nowbox.com/images/photos/89100017.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://nowbox.com/images/photos/89100017.jpg', sizingMethod='scale')";
+}
+/*
+#launch.photo4{
+   background: url(http://nowbox.com/images/photos/89100022.jpg) no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://nowbox.com/images/photos/89100022.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://nowbox.com/images/photos/89100022.jpg', sizingMethod='scale')";
+}*/
+
+#announcement{ background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat; color: #AAA; position: absolute; top: 0px; height: 30px; 	line-height: 30px; text-align: center; width: 100%; opacity: 0.7; }
+	#announcement a{ color: #EEE; }
+		#announcement a:hover{ color: #FFF; text-decoration: underline;}
+#taglinebox { width: 600px; left: 50%; margin-left: -300px; top: 60px; text-shadow: 0px 0px 30px #000; position: absolute; text-align: center;  }
+	#taglinebox h1{ text-transform: lowercase; margin-top: 30px; color: #FFF; font: bolder 30px "helvetica neue", helvetica, arial, sans-serif;}
+	#taglinebox h2{ text-transform: lowercase; color: #FFF; font: 200 20px "helvetica neue", helvetica, arial, sans-serif;}
+	#launch.photo3 #taglinebox h1, #launch.photo3 #taglinebox h2, #launch.photo4 #taglinebox h1, #launch.photo4 #taglinebox h2{ color: #222; text-shadow: 0px 0px 30px #FFF; }
+
+#launchlogo{ text-align: center; background: rgba(0, 0, 0, 0.2); padding: 20px;
+  -webkit-box-shadow: 0px 0px 5px rgba(250,250,250,.2);
+     -moz-box-shadow: 0px 0px 5px rgba(250,250,250,.2);
+      -ms-box-shadow: 0px 0px 5px rgba(250,250,250,.2);
+       -o-box-shadow: 0px 0px 5px rgba(250,250,250,.2);
+          box-shadow: 0px 0px 5px rgba(250,250,250,.2);
+}
+	#launchlogo img { vertical-align: middle;}
+	#launchlogo:hover{ background: rgba(0, 0, 0, 0.8); }
+
+#launchbox {
+	position: fixed;
+	padding: 10px; width: 450px; margin-left: -225px; margin-top: -100px; left: 50%; top: 50%;
+	background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+      -ms-box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+       -o-box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+          box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+	#launchbox .wrapper{ width: auto; padding: 10px; background: url(http://nowbox.com/images/textures/aji-tiles-salmon.jpg) repeat; }
+	#launchbox h1{  margin-top: 0px; color: #41191a; font: 200 30px "helvetica neue", helvetica, arial, sans-serif;}
+	#launchbox h2{  color: #7c2a2b; font: 100 20px "helvetica neue", helvetica, arial, sans-serif; border-bottom: 1px dotted #b54345;}
+	#launchbox p{ font-weight: normal; font-size: 12px; color: #AAA; line-height: 2; color: #b54345; margin-bottom: 10px;}
+	#launchbox .social{ margin: 20px 0px 0px;}
+	#launchbox a, #launchbox a:active, #launchbox a:visited{ color: #EEE; }
+		#launchbox a:hover{ color: #FFF; text-decoration: underline; }
+
+#invite-email{ padding: 10px; border: 1px solid transparent; font-size: 21px; color: #666; display: block; float: left; width: 250px; }
+#invite-submit{ display: block; float: right;}
+	#invite-submit:hover{  }
+
+.after_submit{ display: none; margin-bottom: 10px; padding: 10px; background: rgba(0,0,0, 0.1); font-size: 16px; line-height: 1.5;}
+
+
+#ref_share{ margin: 20px 0px; }
+	#referral_link{ width: 350px; margin: 10px 0px 0px; padding: 10px; border: 1px solid transparent; font-size: 21px; color: #444; display: block;}
+
+
+/* INDEX */
+#main_photo_wrapper{  height: 500px; width: 100%; margin: -100px auto 0px; position: relative;}
+#main_photo{ height: 500px; width: 100%;  margin: auto; overflow: hidden; }
+	#main_photo img{   }
+#tagline {  display:block; line-height: 40px; color: #FFF; text-align: left; font-weight: bold; position: absolute;  left: 50%;  bottom: 50px; width: 900px; margin-left: -450px; font: 100 50px "helvetica neue", helvetica, arial, sans-serif; text-shadow: 0px 1px 5px #000;}
+.taglinebox{ position: absolute; bottom: 0px; width: 100%; height: 200px; }
+
+#main_photo_wrapper.shorter{ height: 350px; margin: -100px auto 0px;}
+	#main_photo_wrapper.shorter #main_photo{ height: 350px;}
+
+#video_tour{ margin: 20px auto 20px;}
+
+.appstore{ margin: 20px auto 10px; text-align: center;}
+	.appstore a{  opacity: 0.2; }
+	.appstore a:hover{ opacity: 1;}
+
+/* HOME */
+
+#home_launch_form{ padding: 20px; margin: 0px auto;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,1);
+     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,1);
+      -ms-box-shadow: 0px 0px 5px rgba(0,0,0,1);
+       -o-box-shadow: 0px 0px 5px rgba(0,0,0,1);
+          box-shadow: 0px 0px 5px rgba(0,0,0,1);
+ }
+	#home_launch_form .box{ width: 600px; margin: auto;  }
+	#home_launch_form .social{ margin: 20px 0px 0px;}
+	#home_launch_form h2{  border-bottom-color: #1c2b3d;  color: #ffffff; font: 200 20px "helvetica neue", helvetica, arial, sans-serif; }
+	#home_launch_form p{ font-weight: normal; font-size: 14px; color: #AAA; line-height: 2; color: #758b99; margin-bottom: 10px;}
+	#home_launch_form form { margin: 15px auto;}
+		#home_launch_form #invite-email{ width: 400px; }
+
+/* ABOUT */
+
+#dictionary{ line-height: 2; }
+.pronounciation{ font-size: 24px; color: #111; }
+		.pronounciation .bullet{ font-size: 18px; margin: 0px 3px;}
+		.pronounciation .noun{ color: #666;}
+.definition{ font-style: italic;  color: #444; }
+
+#about li{}
+	#about .image { float: left; width: 100px; }
+		#about .image a{ display: block; }
+		#about .image img { width: 100px; }
+	#about .bio { float: left; width: 600px; padding: 0px 20px; line-height: 1.5; }
+		#about .identity{ font-weight: bold; font-size: 16px; color: #000; }
+			#about .identity .role{ margin-left: 5px; color: #AAA; font-weight: normal;}
+		#about .description{ font-size: 14px;}
+		#about .email{ color: #AAA; }
+
+#investors li{ display: inline; margin: 0px; }
+	#investors li:after{ content: ", "; }
+	#investors li:last-child:after{ content: "";}
+
+/* JOBS */
+#jobs li{ list-style-type: disc;
+margin-left: 20px;}
+
+/* TOUR */
+#tour .ipad-chrome{ margin: auto;}
+	#tour ul{ list-style: none; }
+	ul.slidenav{ margin: 0px; padding: 10px; text-align: center; 	background-color: #EFEFEF; background: url(http://nowbox.com/images/textures/bg-offwhite-crosshatch-2.jpg) repeat; text-shadow: 0px 1px 1px #CCC; border-bottom: 1px solid #DDD;}
+		ul.slidenav li{ float: left; display: block; width: 280px; margin: 0px 5px; padding: 0px; list-style: none; }
+			ul.slidenav li a{ display: block; padding: 10px;  z-index: 1;
+				border-radius: 5px;  -moz-border-radius: 5px;  -webkit-border-radius: 5px; border: 1px solid transparent;
+			}
+				ul.slidenav li a:hover{  color: #222; background: rgba(0, 0, 0, 0.1); }
+					ul.slidenav li.active a{
+/* 							background-color: #FFB800; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFD727), to(#FFB800), color-stop(.6,#FFB800)); */
+/* 							 background-color: #dbe5f3; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dbe5f3), to(#d5dee9)); */
+							border-bottom: 1px solid #CCC;
+						  -webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,.5);
+						     -moz-box-shadow: inset 0px 0px 5px rgba(0,0,0,.5);
+						      -ms-box-shadow: inset 0px 0px 5px rgba(0,0,0,.5);
+						       -o-box-shadow: inset 0px 0px 5px rgba(0,0,0,.5);
+						          box-shadow: inset 0px 0px 5px rgba(0,0,0,.5);
+						          z-index: 10;
+						   background: rgba(0, 0, 0, 0.1);
+					}
+				ul.slidenav .image{ margin: 10px 0px; height:75px; width: 100%; display: none;}
+				ul.slidenav .title{ font-size: 20px; margin: 5px 0px; color: #555;}
+					ul.slidenav li a:hover .title{ color: #111;}
+					ul.slidenav li.active a .title{ color: #000000; }
+				ul.slidenav .description{  font-size: 12px; color: #666; }
+					ul.slidenav li a:hover .description{ color: #222;}
+					ul.slidenav li.active a .description{ color: #333333; }
+
+	ul.slides{ margin: 0px; padding: 10px; text-align: center; background-color: #F5F5F5; }
+		ul.slides li{ display: none; }
+			ul.slides li.active{ display: block; }
+		ul.slides .intro{ font-size: 16px; color: #555; line-height: 2; text-align: left; width: 80%; margin: 0px auto 20px; padding: 0px 0px 20px; border-bottom: 1px solid #CCC; }
+		ul.slides .image{ width: 80%; margin: auto; }
+		ul.slides .description{ font-size: 14px; text-transform: uppercase; width: 80%; margin: 10px auto 50px; line-height: 2; color: #333; font-weight: bold; }
+			ul.slides .description:last-child{ margin-bottom: 0px;}
+
+
+/* VIDEO */
+#video_layout #logo{ height: 50px; width: 300px; margin: 20px auto 10px; text-align: center; float: none;}
+
+#video .call_to_action_social{ }
+
+#video #embed { 
+  position: relative; 
+  height: 510px; 
+  margin: 0px 0px; 
+  padding: 0px; 
+  text-align: center; 
+  /* begin change video embed background  --patrick */
+  background: url(../images/new/video_embed_bg.png) no-repeat center top;
+  /* 
+    background-color: #111; 
+    background: rgba(0, 0, 0, 0.4);
+  */
+  /* end change video embed background */
+}
+
+	#video #embed iframe { 
+    background-color: #000;
+    margin: auto; 
+  }
+
+  /* begin remove video footer styles  --patrick */
+  /*
+    #share_button{ float: right; }
+    #share_buttons{ float: right; height: 70px; display: none;}
+    #info{ margin-top: 10px;} --patrick 
+    #video_info{ float: left; display: block; text-shadow: 0px 1px 1px #000; width: 520px; text-overflow: ellipsis; overflow: hidden;  line-height:  25px;}    
+    #video_info .title{ font-size: 16px; color: #EEE; }
+    #video_info .description { font-size: 12px; color: #AAA; line-height:  20px; text-shadow: 0px 1px 1px #222;}
+    #video_info .description a{ color: #666; font-style: italic;}
+    #video_info .description a:hover{ color: #FF9900; }
+  */
+  /* end remove video footer styles */
+
+	ul#user_videos { list-style: none; padding: 0px; padding-bottom: 20px; border-top: 1px dotted #777; border-bottom: 1px dotted #777; }
+		ul#user_videos li { float: left; display: block; width: 284px; height: 195px; margin: 8px; }
+			ul#user_videos li .image{ height: 125px; overflow: hidden; position: relative;}
+				ul#user_videos li img{ width: 100%; margin-top: -25px;
+															-webkit-transition: all 3s ease-in-out;
+/* 														  -moz-transition: all 1s ease-in-out; */
+														  -o-transition: all 3s ease-in-out;
+
+														 }
+					ul#user_videos li:hover img{
+														  				 -webkit-transform: scale(1.2);
+/* 																				-moz-transform: scale(1.2); */
+																				-o-transform: scale(1.2);
+																		 }
+				ul#user_videos li .viewcount{ position: absolute; top: 10px; right: 10px; padding: 5px; background-color: #000; background: rgba(0, 0, 0, 0.5); color: #EEE; text-shadow: 0px 1px 1px #000; font-size: 10px; }
+			ul#user_videos li a{ display: block; padding: 10px; background: rgba(0, 0, 0, 0.1); }
+/*
+				ul#user_videos li a:hover{ background: rgba(0, 0, 0, 0.15);
+				  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+				     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+				      -ms-box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+				       -o-box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+				          box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+ 				 }
+*/
+			ul#user_videos li a .title{ overflow: hidden; text-overflow: ellipsis; line-height: 20px; color: #777; text-shadow: 0px 1px 1px #222; width: 100%; height: 40px; margin-top: 10px; }
+				ul#user_videos li a:hover .title{ color: #AAA; }
+
+	#video h2{ text-transform: uppercase; color: #AAA; text-shadow: 0px 1px 1px #000; text-align: center; padding: 10px 0px; }
+
+	#next_button{ position: absolute; right: 0px; top: 15px;}
+		#next_button a{ font-size: 20px; text-transform: uppercase; color: #EEE;
+				display: block; height: 100%; width: 100%; opacity: 0.3;
+		 }
+		#next_button a img{ }
+		 	#next_button a:hover{ opacity: 1;}
+
+/* begin new video styles  --patrick */
+
+#header  {
+  padding-bottom: 12px;
+}
+
+  #header .blurb,
+  #header .profile_pic,
+  #header .app_store a {
+    float: left;
+  }
+  
+    #header .profile_pic {
+      padding-top: 1px;
+      margin-right: 22px;
+    }
+  
+    #header .blurb {
+      width: 582px;
+    }
+  
+      #header .blurb dt {
+        color: #727272;
+        font-size: 14px;
+        font-style: italic;
+        margin-bottom: 2px;
+      }
+  
+        #header .blurb em {
+          color: #ffce3d;
+        }
+  
+      #header .blurb dd {
+        color: #e0e0e0;
+        font-size: 13px;
+        line-height: 21px;
+      }
+  
+  #header .app_store {
+    float: right;
+  }
+
+#video_layout .logo {
+  float: left;
+  padding: 5px 21px 0;
+
+}
+
+  #video_layout .logo a {
+    float: left;
+    width: 132px; 
+    height: 18px;
+  }
+
+#video_layout #info {
+  padding: 16px;
+  margin-top: 0;
+}
+
+  #video_info { 
+    float: left; 
+    border-left: 1px solid #121212;
+    margin-right: 22px;
+  }
+  
+    #video_info .wrap { 
+      width: 542px;
+      overflow: hidden;  
+      text-overflow: ellipsis; 
+      text-shadow: 0px 1px 1px #000; 
+      border-left: 1px solid #2f2f2f;
+      padding: 0 0 0 21px;
+    }
+  
+    #video_info .title { 
+      color: #eee; 
+      font-size: 18px; 
+      line-height: 25px;
+    }
+
+    #video_info .description { 
+      color: #686868; 
+      font-size: 13px; 
+      line-height: 20px;
+      text-shadow: 0px 1px 1px #222;
+    }
+
+      #video_info .description a { 
+        color: #bababa; 
+      }
+      
+        #video_info .description a:hover { 
+          color: #FF9900; 
+        }
+
+#share_button a,
+#shuffle_button a {
+  float: left;
+}
+
+  #share_button { 
+    float: left; 
+    width: 70px;
+    margin-right: 16px;
+    overflow: hidden;
+  }
+
+    #share_buttons {
+      display: none;
+      height: 240px; 
+      background-color: #000;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 1px #333;
+      -moz-box-shadow: 0 1px #333;
+      -ms-box-shadow: 0 1px #333;
+      -o-box-shadow: 0 1px #333;
+      box-shadow: 0 1px #333;
+    }
+    
+    #share_buttons .delimiter {
+      width: 48px;
+      height: 1px;
+      font-size: 1px;
+      border-bottom: 1px solid #212121;
+      margin: 0 auto;
+    }
+
+    #share_buttons .fblike {
+      padding: 9px 11px;
+    }
+
+      #share_buttons .fblike iframe {
+        width: 48px; 
+        height: 62px;
+        border: none;
+        overflow: hidden; 
+        margin-bottom: 4px;
+      }
+
+    #share_buttons .plusone {
+      width: 50px; 
+      padding: 0 10px 4px;
+    }
+
+    #share_buttons .tweet {
+      height: 62px;
+      padding: 0 8px;
+    }
+
+      #share_buttons .tweet .delimiter {
+        margin-bottom: 9px;
+      }
+
+      #share_buttons .tweet iframe {
+        width: 56px;
+      }
+
+  #shuffle_button a {
+    float: left;
+  }
+  
+/* end new video styles */
+
+/*CHANNEL*/
+#channel_layout h1{ color: white; }
+
+/* SHARER */
+#sharer{ text-align: center; padding-top: 0px; }
+	#sharer .image{ float: left; display: block; margin-right: 10px; height: 48px; }
+	#sharer .blurb{ float: left; display: block; line-height:  25px; text-shadow: 0px 1px 1px #000; width: 520px; text-overflow: ellipsis; overflow: hidden;}
+	#sharer a.download.button{ float: right; display: block; padding: 0px 20px; line-height: 40px; border: 5px solid #EFEFEF; background-color: #66CCFF; color: #F9F9F9; font-size: 18px; font-weight: bold;}
+		#sharer a.download.button:hover{ border-color: #FFF;}
+
+	#sharer .message{ font-size: 16px; font-style: italic; font-family: Georgia, "Times New Roman", Times, serif; color: #AAA; }
+	#sharer .message_sharer { color: #777; }
+	#sharer .quotes{ font-size: 24px; color: #555;}
+
+/* EFFECTS */
+.divider{ height: 10px; width: 100%; margin:auto; }
+.brightblue-tile{ background: url(http://nowbox.com/images/textures/aji-tiles-crosshatch-brightblue.jpg) repeat;  }
+.darkdarkblue-tile{ background: url(http://nowbox.com/images/textures/aji-tiles-darkdarkblue.jpg) repeat;  }
+.black-tile{ background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat;  }
+.orange-tile{ background: url(http://nowbox.com/images/textures/aji-tiles-crosshatch-orange.jpg) repeat;  }
+.darkorange-tile{ background: url(http://nowbox.com/images/textures/aji-tiles-crosshatch-darkorange.jpg) repeat;  }
+.redorange-tile{ background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat;  }
+.gray-tile{ background: url(http://nowbox.com/images/textures/bg-gray-crosshatch.jpg) repeat;  }
+.mistyblue-tile{  background: url(http://nowbox.com/images/textures/bg-blue-crosshatch.jpg) repeat; }
+
+.gradient{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9)));       }
+
+.inset_shadow{ position: absolute; z-index: 10; left: 0; top: 0; bottom: 0; right: 0; border: 1px solid #AAA;
+				  -webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,1);
+				     -moz-box-shadow: inset 0px 0px 5px rgba(0,0,0,1);
+				      -ms-box-shadow: inset 0px 0px 5px rgba(0,0,0,1);
+				       -o-box-shadow: inset 0px 0px 5px rgba(0,0,0,1);
+				          box-shadow: inset 0px 0px 5px rgba(0,0,0,1);
+}
+
+a:hover .inset_shadow{  border: 1px solid #EEE; box-shadow: none;}
+
+.kenburns { overflow: hidden; }
+.kenburns img{
+	-webkit-transition: all 1s ease-in-out;
+	/*-moz-transition: all 1s ease-in-out; */
+  -o-transition: all 1s ease-in-out;
+}
+
+.kenburns:hover img{
+	-webkit-transform: scale(1.2);
+	/*-moz-transform: scale(1.1); */
+	-o-transform: scale(1.2);
+}
+
+a.opacity_transition{
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+/* CALL TO ACTIONS */
+#call_to_action_quote{ padding: 10px; background-color: #EFEFEF; background: rgba(0, 0, 0, 0.1); }
+	#call_to_action_quote .quoter_image{ float: left; display: block; margin-right: 10px; height: 48px; }
+	#call_to_action_quote .blurb{ float: left; display: block; line-height:  25px; text-shadow: 0px 1px 1px #FFF; }
+		#call_to_action_quote .quote{ color: #111; font-size: 24px; }
+		#call_to_action_quote .quoter{ color: #555; font-size: 14px; }
+	#call_to_action_quote a.download.button{ float: right; display: block; padding: 0px 20px; line-height: 40px; border: 5px solid #EFEFEF; background-color: #66CCFF; color: #F9F9F9; font-size: 18px; font-weight: bold;}
+		#call_to_action_quote a.download.button:hover{ border-color: #FFF;}
+
+.call_to_action_download{ padding: 10px; background-color: #000; box-shadow: inset 0px 0px 5px #000;}
+	.call_to_action_download .image{ float: left; display: block; margin-right: 10px; height: 48px; }
+	.call_to_action_download .blurb{ float: left; display: block; line-height:  25px; color: #333; text-shadow: 0px 1px 1px #222; width: 525px;}
+	.call_to_action_download a.download.button{ float: right; display: block; padding: 0px 20px; line-height: 40px; border: 5px solid transparent; background-color: #5bb8ea; background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat; color: #F9F9F9; font-size: 18px; font-weight: bold;}
+		.call_to_action_download a.download.button:hover{  background-color: #66CCFF; border-color: #FFF;}
+
+
+.call_to_action_social{ padding: 10px; background-color: #000; box-shadow: inset 0px 0px 5px #000;}
+	.call_to_action_social .image{ float: left; display: block; margin-right: 10px; height: 48px; }
+	.call_to_action_social .blurb{ float: left; display: block; line-height:  25px; color: #333; text-shadow: 0px 1px 1px #222; width: 500 px;}
+			.call_to_action_social .blurb p:first-child{
+				font-size: 16px; color: #ffdd81;
+			}
+			.call_to_action_social .blurb p:last-child{
+				font-size: 12px; color: #AAA;
+			}
+	.call_to_action_social a.download.button{ float: right; display: block; padding: 0px 20px; line-height: 40px; border: 5px solid transparent; background-color: #5bb8ea; background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat; color: #F9F9F9; font-size: 18px; font-weight: bold;}
+		.call_to_action_social a.download.button:hover{  background-color: #66CCFF; border-color: #FFF;}
+
+
+	.social_sharer{ font-weight: bold; color: #FFF; }
+
+/* USER QUOTES */
+.user_quote{ padding: 10px; margin-bottom: 10px; }
+	.user_quote:last-child{ margin-bottom: 0px;}
+	.user_quote .quoter_image{ float: left; display: block; margin-right: 20px; height: 48px; }
+	.user_quote .blurb{ width: 500px; float: left; display: block; line-height:  25px; text-shadow: 0px 1px 1px #FFF;  }
+		.user_quote .quote{ color: #444; font-size: 22px;font-family: 'Georgia', 'Times New Roman', Times, serif; font-style: italic; text-shadow: 0px 1px 1px #FFF; line-height: 1.5;}
+		.user_quote .quoter{ color: #888; font-size: 14px; margin-top: 5px; }
+
+/* MOBILE */
+
+@media (handheld or max-width:480px){
+	body { font-size: 80%; background: url(http://nowbox.com/images/textures/aji-tiles-darkgray.jpg) repeat; }
+	#launch{ background: none;}
+}
