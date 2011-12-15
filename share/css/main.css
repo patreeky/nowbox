@@ -315,6 +315,8 @@ margin-left: 20px;}
 
   #header .blurb,
   #header .profile_pic,
+  #header .win_ipad a,
+  #header .app_store,
   #header .app_store a {
     float: left;
   }
@@ -325,7 +327,8 @@ margin-left: 20px;}
     }
   
     #header .blurb {
-      width: 582px;
+      width: 578px;
+      margin-right: 15px;
     }
   
       #header .blurb dt {
@@ -346,7 +349,12 @@ margin-left: 20px;}
       }
   
   #header .app_store {
+    margin-right: 15px;
+  }
+
+  #header .win_ipad {
     float: right;
+    margin-top: -20px;
   }
 
 #video_layout .logo {
